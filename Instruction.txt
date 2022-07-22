@@ -1,0 +1,31 @@
+   1. На локальном репозитории сделать ветки:
+- Student
+- Mentor
+
+Выполнение:
+$ git branch Student
+$ git branch Mentor
+
+
+   2. Запушить все ветки на внешний репозиторий.
+$ git push -u origin Student Mentor
+
+   3. В ветке Student сделать текстовый документ c описанием выполненной задачи.
+$ git checkout Student
+$ cat > Simplified_testing_classification.txt
+Здесь ввести текст.
+Ctrl + D
+Ctrl + C
+
+   4. Запушить выполненную задачу на внешний репозиторий.
+$ git add Simplified_testing_classification.txt
+$ git commit -m "Add new file"
+$ git push
+
+   5. Вмержить ветку Student в Mentor.
+$ git checkout Mentor
+$ git merge Student
+
+   6. Запушить Mentor на внешний репозиторий.
+$ git push -u origin Mentor
+
