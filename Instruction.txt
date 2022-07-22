@@ -29,3 +29,51 @@ $ git merge Student
    6. Запушить Mentor на внешний репозиторий.
 $ git push -u origin Mentor
 
+   7. В ветке Student создать текстовый файл как моя работа.
+$ git checkout Student
+$ cat > how_my_homework.txt
+
+   8. Запушить текстовый файл как моя работа на внешний репозиторий.
+$ git add how_my_homework.txt
+$ git commit -m "add new file"
+$ git push
+
+
+  9. На внешнем репозитории сделать Pull Request ветки Student в Mentor.
+
+Открываем страницу репозитория.
+Заходим во вкладку Pull requests.
+Жмем Compare & pull request (выбираем строку с веткой Student).
+
+base: выбираем Mentor
+compare: выбираем Student
+
+Смотрим на ветки, какой куда можно мержить на данный момент (Able to merge. These branches can be automatically merged.).
+Оставляем комментарий.
+Жмем Create pull request
+Жмем Merge pull request
+Жмем Confirm merge
+
+  10. Синхронизировать Внешнюю и Локальную ветки Mentor
+$ git checkout Mentor
+$ git pull
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
